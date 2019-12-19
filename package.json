@@ -1,0 +1,19 @@
+{
+  "name": "phpwalletdocs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://celso-ricardo.github.io/phpwallet-payment-gateway-script"
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}
