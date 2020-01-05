@@ -21,6 +21,6 @@ For full documentation visit [mkdocs.org](https://mkdocs.org).
 
 paragraph
 
-![image06](_images/Paystack.png)
+![image06](https://raw.githubusercontent.com/Celso-Ricardo/phpwallet-payment-gateway-script-docs/master/docs/_images/Paystack.png)
 
 test
