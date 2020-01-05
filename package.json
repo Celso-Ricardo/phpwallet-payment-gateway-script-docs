@@ -7,12 +7,12 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d site"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage": "https://celso-ricardo.github.io/phpwallet-payment-gateway-script"
+  "homepage": "https://celso-ricardo.github.io/phpwallet-payment-gateway-script-docs",
   "dependencies": {
     "gh-pages": "^2.1.1"
   }
