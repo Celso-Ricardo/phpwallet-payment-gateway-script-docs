@@ -3,7 +3,3 @@ theme: material
 
 nav:
     - Installation Guide: index.md
-    - Currencies: about.md
-    - Exchange Rates: about.md
-    - Deposits: about.md
-    - Deposit Methods: about.md
