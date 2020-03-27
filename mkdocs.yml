@@ -14,5 +14,6 @@ nav:
   - Currencies: currency.md
   - Deposit Methods: d_m.md
   - Withdrawal Methods: w_m.md
-  - Currency Exchange Rates: e_r.md
+  - Currency Exchange Rates: e_r.mdr
   - FAQ: faq.md
+  - Changelog: changelog.md
