@@ -29,11 +29,6 @@ The first step in the installation process is to make sure that your server has 
 
 [![image00](img/dotenv.png)](img/dotenv.png)
 
-## __The file storage__
-
-* Copy the symbolic link folder ` storage ` from ` .. /public_html/application/public/ `  to ` .. /public_html/ `
-
-[![image01](img/storage_link.png)](img/storage_link.png)
 
 ## __Configuring PayPal__
 ### Add PayPal API keys
@@ -64,3 +59,9 @@ The first step in the installation process is to make sure that your server has 
 
 ### Activate Stripe Gateway 
 * Activate the Stripe gateway in settings menu. ( process described [here](#step-2_1)  )
+
+## __The file storage__
+
+* Copy the symbolic link folder ` storage ` from ` .. /public_html/application/public/ `  to ` .. /public_html/ `
+
+[![image01](img/storage_link.png)](img/storage_link.png)
