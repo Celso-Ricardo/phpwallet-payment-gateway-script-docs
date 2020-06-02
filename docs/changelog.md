@@ -1,6 +1,21 @@
 Changelog
 =========
 
+##__Version 3.4__
+
+__(06/02/2020)__
+
+1. fixed user impersonation
+2. fixed Paystack bug.
+
+__files__
+<pre>
+	modified:   app/Http/Controllers/PaystackController.php
+    modified:   app/Http/Controllers/ProfileController.php
+    modified:   resources/views/welcome.blade.php
+</pre>
+
+
 ##__Version 3.2__
 
 __(03/30/2020)__
