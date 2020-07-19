@@ -49,6 +49,10 @@ The first step in the installation process is to make sure that your server has 
 
 [![image04](img/paystack_config.png)](img/paystack_config.png)
 
+* in PayStack developer dashboard go to ` Test Callback URL ` replace ` http:\\domain.com ` with your domain name
+
+ [![image000](img/paystack_config_developer.png)](img/paystack_config_developer.png)
+
 ### Activate Paystack Gateway 
 * Activate the Paystack gateway in settings menu. ( process described [here](#step-2_1)  )
 
