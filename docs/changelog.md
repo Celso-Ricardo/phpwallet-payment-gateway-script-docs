@@ -1,7 +1,26 @@
 Changelog
 =========
+##__Version 3.5__
 
-##__Version 3.4__
+__(07/25/2020)__
+
+1. added receipt for deposits, ( allowing users to see the deposit request amount from the receipt )
+2. improved user impersonation feature in admin side.
+3. fixed previous version bugs.
+
+__files__
+<pre>
+ 	modified:   app/Helpers/Money.php
+    modified:   app/Http/Controllers/AddCreditController.php
+    modified:   resources/views/auth/login.blade.php
+    modified:   resources/views/auth/register.blade.php
+    modified:   resources/views/deposits/index.blade.php
+    modified:   resources/views/vendor/voyager/users/browse.blade.php
+    modified:   resources/views/welcome.blade.php
+</pre>
+
+
+##__Version 3.3 / 3.4__
 
 __(06/02/2020)__
 
@@ -14,7 +33,6 @@ __files__
     modified:   app/Http/Controllers/ProfileController.php
     modified:   resources/views/welcome.blade.php
 </pre>
-
 
 ##__Version 3.2__
 
