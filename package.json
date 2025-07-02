@@ -14,6 +14,6 @@
   "license": "ISC",
   "homepage": "https://celso-ricardo.github.io/phpwallet-payment-gateway-script-docs",
   "dependencies": {
-    "gh-pages": "^2.1.1"
+    "gh-pages": "^2.2.0"
   }
 }
