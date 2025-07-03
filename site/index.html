@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="None" />
       <link rel="shortcut icon" href="img/favicon.ico" />
-    <title>phpWallet Docs</title>
+    <title>filamentWallet Docs</title>
     <link rel="stylesheet" href="css/theme.css" />
     <link rel="stylesheet" href="css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -30,7 +30,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href="." class="icon icon-home"> phpWallet Docs
+          <a href="." class="icon icon-home"> filamentWallet Docs
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
@@ -48,32 +48,6 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#setting-enviroment-variables">Setting enviroment variables</a>
     </li>
-    <li class="toctree-l2"><a class="reference internal" href="#configuring-paypal">Configuring PayPal</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#add-paypal-api-keys">Add PayPal API keys</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#activate-paypal-gateway">Activate PayPal Gateway</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#configuring-paystack">Configuring Paystack</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#add-paystack-api-keys">Add Paystack API keys</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#activate-paystack-gateway">Activate Paystack Gateway</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#configuring-stripe">Configuring Stripe</a>
-        <ul>
-    <li class="toctree-l3"><a class="reference internal" href="#add-stripe-api-keys">Add Stripe API keys</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#activate-stripe-gateway">Activate Stripe Gateway</a>
-    </li>
-        </ul>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#the-file-storage">The file storage</a>
-    </li>
     </ul>
                 </li>
               </ul>
@@ -82,15 +56,11 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="d_m/">Deposit Methods</a>
+                <li class="toctree-l1"><a class="reference internal" href="transfer_method/">Transfer Methods</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="w_m/">Withdrawal Methods</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="" href="e_r.mdr">Currency Exchange Rates</a>
+                <li class="toctree-l1"><a class="reference internal" href="currency_exchange/">Currency Exchange Rates</a>
                 </li>
               </ul>
               <ul>
@@ -108,7 +78,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
       <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href=".">phpWallet Docs</a>
+          <a href=".">filamentWallet Docs</a>
         
       </nav>
       <div class="wy-nav-content">
@@ -124,11 +94,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="welcome-to-phpwallet-documentation">Welcome to phpWallet documentation</h1>
-<p>The first step in the installation process is to make sure that your server has all the prerequisites necessary to host phpWallet. Most server with Cpanel already have all the prerequisites included.</p>
+                <h1 id="welcome-to-filamentwallet-documentation">Welcome to filamentWallet documentation</h1>
+<p>The first step in the installation process is to make sure that your server has all the prerequisites necessary to host filamentWallet. Most server with Cpanel already have all the prerequisites included.</p>
 <h2 id="server-requirements"><strong>Server requirements</strong></h2>
 <ul>
-<li>PHP &gt;= 7.1.*</li>
+<li>PHP &gt;= 8.3.*</li>
 <li>PDO PHP Extension</li>
 <li>Tokenizer PHP Extension</li>
 <li>PHP Fileinfo extension</li>
@@ -142,9 +112,9 @@
 </ul>
 <h2 id="upload-files-create-a-database-and-an-email-with-cpanel"><strong>Upload files, create a database and an email with cpanel</strong></h2>
 <ul>
-<li>Upload The phpWallet zip file to your server's <code>public_html/</code> folder.</li>
+<li>Upload The filamentWallet zip file to your server's <code>public_html/</code> folder.</li>
 <li>Create a database and write-down the database name, user , and password for <a href="#step-2">step 2</a></li>
-<li>Import the .sql to your recently created databse. Use your cpanel  phpMyadmin</li>
+<li>Import the .sql to your recently created databse. Use your cpanel phpMyadmin</li>
 <li>Create an email account and write-down the email's <code>smtp</code> info for <a href="#step-2">step 2</a></li>
 </ul>
 <h2 id="setting-enviroment-variables"><strong>Setting enviroment variables</strong></h2>
@@ -152,45 +122,6 @@
 <li>In your server go to <code>.. /public_html/application/.env</code> and edit the .env file</li>
 </ul>
 <p><a href="img/dotenv.png"><img alt="image00" src="img/dotenv.png" /></a></p>
-<h2 id="configuring-paypal"><strong>Configuring PayPal</strong></h2>
-<h3 id="add-paypal-api-keys">Add PayPal API keys</h3>
-<ul>
-<li>go to <code>.. /public_html/application/config/paypal.php</code> and edit the paypal.php file</li>
-</ul>
-<p><a href="img/paypal_config.png"><img alt="image02" src="img/paypal_config.png" /></a></p>
-<h3 id="activate-paypal-gateway">Activate PayPal Gateway</h3>
-<ul>
-<li>go to <code>www.yourwebsite.com/admin</code> and login with an admin account, then activate the PayPal gateway in settings menu</li>
-</ul>
-<p><a href="img/paypal_gateway_setting.png"><img alt="image03" src="img/paypal_gateway_setting.png" /></a></p>
-<h2 id="configuring-paystack"><strong>Configuring Paystack</strong></h2>
-<h3 id="add-paystack-api-keys">Add Paystack API keys</h3>
-<ul>
-<li>go to <code>.. /public_html/application/http/controllers/PaystackController.php</code> and edit the PaystackController.php file</li>
-</ul>
-<p><a href="img/paystack_config.png"><img alt="image04" src="img/paystack_config.png" /></a></p>
-<ul>
-<li>in PayStack developer dashboard go to <code>Test Callback URL</code> replace <code>http:\\domain.com</code> with your domain name</li>
-</ul>
-<p><a href="img/paystack_config_developer.png"><img alt="image000" src="img/paystack_config_developer.png" /></a></p>
-<h3 id="activate-paystack-gateway">Activate Paystack Gateway</h3>
-<ul>
-<li>Activate the Paystack gateway in settings menu. ( process described <a href="#step-2_1">here</a>  )</li>
-</ul>
-<h2 id="configuring-stripe"><strong>Configuring Stripe</strong></h2>
-<h3 id="add-stripe-api-keys">Add Stripe API keys</h3>
-<ul>
-<li>Set <code>STRIPE_PUBLISHABLE_KEY</code> and <code>STRIPE_SECRET_KEY</code>  ( line 26 and 27 ) in the .env file described in <a href="#step-2">step 2</a> </li>
-</ul>
-<h3 id="activate-stripe-gateway">Activate Stripe Gateway</h3>
-<ul>
-<li>Activate the Stripe gateway in settings menu. ( process described <a href="#step-2_1">here</a>  )</li>
-</ul>
-<h2 id="the-file-storage"><strong>The file storage</strong></h2>
-<ul>
-<li>Copy the symbolic link folder <code>storage</code> from <code>.. /public_html/application/public/</code>  to <code>.. /public_html/</code></li>
-</ul>
-<p><a href="img/storage_link.png"><img alt="image01" src="img/storage_link.png" /></a></p>
               
             </div>
           </div><footer>
@@ -239,5 +170,5 @@
 
 <!--
 MkDocs version : 1.6.1
-Build Date UTC : 2025-07-02 12:16:15.825755+00:00
+Build Date UTC : 2025-07-03 08:01:40.362606+00:00
 -->

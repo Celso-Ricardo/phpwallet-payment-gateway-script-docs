@@ -1,4 +1,4 @@
-site_name: phpWallet Docs
+site_name: filamentWallet Docs
 theme:
   name: readthedocs
   palette:
@@ -12,8 +12,9 @@ theme:
 nav:
   - Installation: index.md
   - Currencies: currency.md
-  - Deposit Methods: d_m.md
-  - Withdrawal Methods: w_m.md
-  - Currency Exchange Rates: e_r.mdr
+  - Transfer Methods: transfer_method.md
+  #  - Deposit Methods: d_m.md
+  #  - Withdrawal Methods: w_m.md
+  - Currency Exchange Rates: currency_exchange.md
   - FAQ: faq.md
   - Changelog: changelog.md
